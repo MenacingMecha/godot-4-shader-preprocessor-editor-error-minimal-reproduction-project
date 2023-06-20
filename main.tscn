@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccs6iu1vw87d2"]
+
+[ext_resource type="Texture2D" uid="uid://e504s8wigit1" path="res://icon.svg" id="1_1qnnh"]
+[ext_resource type="Shader" path="res://error-example.gdshader" id="1_tv3m2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o1b81"]
+render_priority = 0
+shader = ExtResource("1_tv3m2")
+
+[node name="TextureRect" type="TextureRect"]
+material = SubResource("ShaderMaterial_o1b81")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1qnnh")
